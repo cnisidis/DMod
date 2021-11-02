@@ -14,20 +14,25 @@ namespace VL.DMod.Helpers
         C4
     }
 
-    public enum DSegmentPlacement
+    public enum DModulePlacement
     {
-        None,//δαπέδου
+
+        B,//Base
         W //επιτοίχειο
 
     }
         
 
-
     public enum DSegmentType
     {
-        R,  //only R
-        RE, //R extended
-        C, //
-        U01 //πόδι για ντουλάπι
+        
+        U, //μεταλλικός (κοινός) ορθοστάτης
+        UC, // μεταλλικός κοινός ορθοστάτης για ντουλάπια
+        UR, //μεταλλικός ορθοστάτης με ράφι στο τελείωμα
+        UW, //ορθοστάτες τοίχου
+        UWC, //ορθοστάτες τοίχου για ντουλάπια
+        UWR //ορθοστάτες τοίχου με ράφι στο τελείωμα
     }
+
+    
 }
