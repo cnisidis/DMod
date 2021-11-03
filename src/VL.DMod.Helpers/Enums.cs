@@ -34,5 +34,14 @@ namespace VL.DMod.Helpers
         UWR //ορθοστάτες τοίχου με ράφι στο τελείωμα
     }
 
+    public enum DModAppStates
+    {
+        EDITING,
+
+        SAVING,
+        LOADING,
+
+    }
+
     
 }
