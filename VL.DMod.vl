@@ -168,6 +168,17 @@
             <ControlPoint Id="B85zjyGBJoaLc5pHPh3PKS" Bounds="284,428" />
             <ControlPoint Id="RxwIrom8i3sLXjI4B4LVDj" Bounds="330,478" />
             <ControlPoint Id="H7EZZgDobZcMqfVoW75Pkb" Bounds="350,304" />
+            <Pad Id="FGnCtrfSEECNXUOUe83vuj" SlotId="S4HYWtv7MhaQEvg83xzBzo" Bounds="1192,599" />
+            <Node Bounds="1190,633,65,19" Id="DihhN4coTLVMNxASwncNBT">
+              <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+              </p:NodeReference>
+              <Pin Id="QaInnCL3g47PsyISWc0Dpx" Name="X" Kind="InputPin" />
+              <Pin Id="BV5OVS14huRPFdpRXRGJTv" Name="Result" Kind="OutputPin" />
+              <Pin Id="HPIzh5Zm4enQHUfmcIfLnc" Name="Not Assigned" Kind="OutputPin" />
+            </Node>
+            <Pad Id="RtCOQXt0SPJO3ejm2i8juS" SlotId="NgwhmsV6owIOIYijs260hV" Bounds="1192,681" />
           </Canvas>
           <ProcessDefinition Id="SpPv5Q1kL6lQGcd6oud6kK" IsHidden="true">
             <Fragment Id="TE2pXIjQA3GNQ8ktjdwfZR" Patch="JCEu4KNM0VqMOF9dny8qRi" Enabled="true" />
@@ -179,6 +190,7 @@
             <Fragment Id="IGVloyUKnzdPSGvNjXxc1h" Patch="ThGZMYiOEUsNCUjdvoyygR" />
             <Fragment Id="AuUNHXoKp2FLpYuosrlbwo" Patch="RmoxfRqCDnhMfRoUH7QuGT" />
             <Fragment Id="Q8db0l5XDOjNVKlBLSTJXt" Patch="NPtAFOgcrctQPZiNSH3c5X" />
+            <Fragment Id="F3bscgrjSBmL8Qek5JbIZi" Patch="IIQg73LYlxNNcZaicyfORr" Enabled="true" />
           </ProcessDefinition>
           <Slot Id="MkZmHhpUqETPxDUh0iVt8v" Name="position">
             <p:TypeAnnotation p:Type="TypeReference">
@@ -266,6 +278,9 @@
           <Patch Id="NPtAFOgcrctQPZiNSH3c5X" Name="SetShape">
             <Pin Id="Lsz1gPvZIJ4Lm9Lp88CuU8" Name="Shape" Kind="InputPin" />
           </Patch>
+          <Link Id="GuyznS2MXICPmNfivN60TU" Ids="FGnCtrfSEECNXUOUe83vuj,QaInnCL3g47PsyISWc0Dpx" />
+          <Link Id="FMpqFtfLNooM4FQTavo3Cq" Ids="BV5OVS14huRPFdpRXRGJTv,RtCOQXt0SPJO3ejm2i8juS" />
+          <Patch Id="IIQg73LYlxNNcZaicyfORr" Name="Update" ParticipatingElements="DihhN4coTLVMNxASwncNBT" />
         </Patch>
       </Node>
       <!--
@@ -1366,11 +1381,6 @@
         </p:NodeReference>
         <Patch Id="PRXO3HSUde0MdJa7juiRxD">
           <Canvas Id="Cca6zCOGJUbNKF6az4k7uM" BordersChecked="false" CanvasType="Group" />
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="SpGYcWZZksALPd2QkTEHdF" IsHidden="true" />
         </Patch>
       </Node>
@@ -1399,11 +1409,6 @@
           <Patch Id="S7E22od3TaeLlDrN5ZaFiK" Name="Create">
             <Pin Id="B7bCCvPrS0xP0BEPVRjlJC" Name="Rectangle" Kind="InputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="URVPyro029qLij4UvbOUiC" IsHidden="true">
             <Fragment Id="ADuA5BcZ6JYMO9nLC5c79W" Patch="S7E22od3TaeLlDrN5ZaFiK" Enabled="true" />
             <Fragment Id="LW0n8sKNoSWPPdA1UtARr5" Patch="VXTCnCY5L5TQHRb5sUy1TN" />
@@ -1432,6 +1437,78 @@
           <Patch Id="UmycEu0NekDPCOEuxGayqj" Name="Rectangle">
             <Pin Id="M65Y0kec09vLJqY1lLbR22" Name="Rectangle" Kind="OutputPin" />
           </Patch>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ DModulePlacement ************************
+
+-->
+      <Node Name="DModulePlacement" Bounds="593,235" Id="MvBFhSSjh2uPsQNlerAIqr">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.DMod.Helpers" LastSymbolSource="VL.DMod.Helpers.dll">
+          <Choice Kind="TypeFlag" Name="DModulePlacement" />
+        </p:TypeAnnotation>
+        <Patch Id="TnTNFSZamB1MKs1iyJHNz2">
+          <Canvas Id="RLQ5i8K4Bo5QQ9t6XubhzL" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="QEvbKNnwtuaQVHFns2a6yl" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ DModuleType ************************
+
+-->
+      <Node Name="DModuleType" Bounds="595,273" Id="BueCpEFdTspNtpwaSJJtV0">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.DMod.Helpers" LastSymbolSource="VL.DMod.Helpers.dll">
+          <Choice Kind="TypeFlag" Name="DModuleType" />
+        </p:TypeAnnotation>
+        <Patch Id="Pv5C3VKe779NmcGjtm2vAV">
+          <Canvas Id="Kf0c7LkJFkpQKZ4FBv8Ajy" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="KEfwVjrcHSgP73xNIj4Ktv" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ DSegmentType ************************
+
+-->
+      <Node Name="DSegmentType" Bounds="595,309" Id="G2fT74tYUbcP4TOGeAEIrR">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.DMod.Helpers" LastSymbolSource="VL.DMod.Helpers.dll">
+          <Choice Kind="TypeFlag" Name="DSegmentType" />
+        </p:TypeAnnotation>
+        <Patch Id="BRTsISm0baJPKlGk0bQEfJ">
+          <Canvas Id="BOEIZFE9nLRLjjTOy4XVlM" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="V5Bmpl6jgS8OxkSwQ9bft4" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ DModAppStates ************************
+
+-->
+      <Node Name="DModAppStates" Bounds="648,400" Id="FhOGeKf3gJeQF158ieMz9K">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.DMod.Helpers" LastSymbolSource="VL.DMod.Helpers.dll">
+          <Choice Kind="TypeFlag" Name="DModAppStates" />
+        </p:TypeAnnotation>
+        <Patch Id="VwN1XyceNd2O8p7p4MxJUl">
+          <Canvas Id="KF90LLtQiphPPQTL1bXXZj" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="HQ8xyocxoF8NPoJhhfqbsR" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>

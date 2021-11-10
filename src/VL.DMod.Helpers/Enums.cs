@@ -37,9 +37,21 @@ namespace VL.DMod.Helpers
     public enum DModAppStates
     {
         EDITING,
-
         SAVING,
         LOADING,
+        DRAWING,
+        SENDING
+
+    }
+
+    public enum DModFunctionality
+    {
+        TILES,
+        SKETCH
+    }
+
+    public enum DModInteractionArea
+    {
 
     }
 
