@@ -2,6 +2,13 @@
 
 namespace VL.DMod.Helpers
 {
+    public enum DTileArrangement
+    {
+        START,
+        MIDDLE,
+        END
+    }
+
     public enum DModuleType
     {
         R1,
@@ -53,6 +60,18 @@ namespace VL.DMod.Helpers
     public enum DModInteractionArea
     {
 
+    }
+
+    public enum DModAppContext
+    {
+        GRID,
+        EDITMODULE,
+        EDITTILE,
+        PICKMODULE,
+        DELETEMODULE,
+        SAVEDIALOG,
+        IMPORTDIALOG,
+        LOADDIALOG 
     }
 
     
