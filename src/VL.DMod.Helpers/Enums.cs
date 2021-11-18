@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace VL.DMod.Helpers
 {
@@ -18,7 +19,8 @@ namespace VL.DMod.Helpers
         C1,
         C2,
         C3,
-        C4
+        C4,
+        S0 //space
     }
 
     public enum DModulePlacement
@@ -74,5 +76,33 @@ namespace VL.DMod.Helpers
         LOADDIALOG 
     }
 
+    public class DModEnums
+    {
+        public DModEnums()
+        {
+
+        }
+        public static string[] GetNames(object obj)
+        {
+            List<string> names = new List<string>();
+            foreach (string name in Enum.GetNames(typeof(object)))
+            {
+                names.Add(name);
+            }
+            return names.ToArray();
+        }
+
+        public static string[] GetDModuleTypeNames()
+        {
+            List<string> names = new List<string>();
+            foreach (string name in Enum.GetNames(typeof(DModuleType)))
+            {
+                names.Add(name);
+            }
+            return names.ToArray();
+        }
+    }
+
+    
     
 }
