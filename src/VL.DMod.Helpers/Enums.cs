@@ -16,6 +16,7 @@ namespace VL.DMod.Helpers
         R2,
         R3,
         R4,
+        C0,
         C1,
         C2,
         C3,
