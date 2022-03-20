@@ -2329,7 +2329,6 @@
               <ControlPoint Id="EeMTaoQhUMTMCar6VWhExJ" Bounds="786,1104" Alignment="Bottom" />
               <ControlPoint Id="ORGJjhC8IPeQAeBPpCH9WR" Bounds="786,376" Alignment="Top" />
             </Node>
-            <ControlPoint Id="J7rmx6cEjhfODLEBrh22LJ" Bounds="1212,19" />
             <Node Bounds="496,176,99,19" Id="J001RweQ1FdNAuYy69QaFr">
               <p:NodeReference LastCategoryFullName="2D.Collision" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -2902,7 +2901,6 @@
           <Slot Id="SPEEY8OTA3tOxKYLhFDzcp" Name="MousePos" />
           <Slot Id="G0ldfRezH0xN8VoeSMsvqn" Name="DTiles" />
           <Link Id="VzOTQLMvgefO9mzxVAxVGC" Ids="ErjT93Hl8mDN8uuYXZzmUo,Qv35yeq9owXOYGTSFnMEEu" IsHidden="true" />
-          <Link Id="N5sCCusyq4gQC9VNCzKeNB" Ids="PFBlhOq5vj5L6r3PQkWUYT,J7rmx6cEjhfODLEBrh22LJ" IsHidden="true" />
           <Link Id="M11AlKbe24mL4Y9MxlKimr" Ids="OMZDjd6RGSdL5sW0kRJDY5,CqHcxwc82mdQIDLr6cSgWI" />
           <Link Id="M46PDpOqzgONYffTy1v121" Ids="DD34gU0KPjeOh6t4jGv0LE,A87ygK9bIm7Ni4u0Cg2FAf" />
           <Link Id="TlA3tpvW48DMoJ4geaZbou" Ids="BF9aFZkT1XTOfW70ywdMqC,RYa4hEWEz72M0Mk6zso0hp" />
@@ -3037,7 +3035,6 @@
             <Pin Id="N4rgfAUnXdgLhDWIp3wZnl" Name="DCanvas" Kind="InputPin" Bounds="37,-42" />
             <Pin Id="Ml24dGf35C3MD4bBuXnrKw" Name="CanvasPanel" Kind="InputPin" Bounds="769,171" />
             <Pin Id="ErjT93Hl8mDN8uuYXZzmUo" Name="DTiles" Kind="InputPin" Bounds="843,403" />
-            <Pin Id="PFBlhOq5vj5L6r3PQkWUYT" Name="MousePos" Kind="InputPin" Bounds="1180,232" />
             <Pin Id="CcUCXKRmRXUL6JjcptJZY9" Name="LClick" Kind="InputPin" />
             <Pin Id="ITyAfvnDWkCOLweJADUGUy" Name="RClick" Kind="InputPin" />
             <Pin Id="HpKXKxaSH2lLl8rLnscIvW" Name="AppSettings" Kind="InputPin" Bounds="1608,38" />
@@ -10003,7 +10000,7 @@
           <Pad Id="GvGOPXb99r9Ph4JhsbkzDW" SlotId="Qz2fr1pxEvvK9xb9lrhgUY" Bounds="348,-110" />
           <Pad Id="G1NxRNlJz7MOMJTbSXysHB" SlotId="ALVj84ClimMOJBJBytgocc" Bounds="972,-777" />
           <Pad Id="P5MBfRc8pPIORS454eCjQ1" Comment="Client Area In Pixel" Bounds="1548,650,47,28" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="1435,9,145,19" Id="CqaALp5g8l1N7BfEnHxUNJ">
+          <Node Bounds="1454,21,145,19" Id="CqaALp5g8l1N7BfEnHxUNJ">
             <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="DModApp.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="InteractWithDTiles" />
@@ -10011,7 +10008,6 @@
             <Pin Id="JZsZA0gcwq7M6AxoUBypm9" Name="DCanvas" Kind="InputPin" />
             <Pin Id="FMbcwF37VxkO97CTrWAFOX" Name="CanvasPanel" Kind="InputPin" />
             <Pin Id="CkWByphJDOpNOj4rWiARzE" Name="DTiles" Kind="InputPin" />
-            <Pin Id="I53WSLxNArXMteUIuhKYjs" Name="MousePos" Kind="InputPin" />
             <Pin Id="RLEizZRxKIPOfwQ72aweqS" Name="LClick" Kind="InputPin" />
             <Pin Id="M4KYz8KI6TnP5kuUNW1pmt" Name="RClick" Kind="InputPin" />
             <Pin Id="LgGVaBh2WoBNBKtFMEHdDx" Name="AppSettings" Kind="InputPin" />
@@ -10022,6 +10018,7 @@
             <Pin Id="CPTeYXdhQAnPl4VwYCZw59" Name="TileToEdit" Kind="OutputPin" />
             <Pin Id="TNsddQhEjtgPd8BHuwF8l2" Name="PaintTileEnabled" Kind="OutputPin" />
             <Pin Id="OEwSqGZzA4CNW6DfGmUgjT" Name="Output" Kind="OutputPin" />
+            <Pin Id="I53WSLxNArXMteUIuhKYjs" Name="MousePos" Kind="InputPin" />
           </Node>
           <Pad Id="F0bkWV3RPBLO8OoJIUCWrr" SlotId="UhXZ0T9i5KbOaDFhVfyQ6t" Bounds="1639,-20" />
           <Pad Id="EuN4fjbEEBOMMZkTrShppP" SlotId="DW7OQn8WGUrMC05JbfQo22" Bounds="1694,-5" />
