@@ -2613,8 +2613,7 @@
                     <Node Bounds="1649,1016,45,26" Id="IAGC7zBrXT7NTfceIKiQvN">
                       <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="Write" />
-                        <CategoryReference Kind="ClassType" Name="Console" NeedsToBeDirectParent="true" />
+                        <Choice Kind="OperationCallFlag" Name="WriteLine" />
                       </p:NodeReference>
                       <Pin Id="TlRiEOVHJoiOQxutAAqdvy" Name="Value" Kind="InputPin" />
                       <Pin Id="GgT0HqE98WxObjq6tdrWmq" Name="Apply" Kind="InputPin" DefaultValue="True" />
