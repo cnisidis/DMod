@@ -281,7 +281,6 @@
       </p:NodeReference>
       <Patch Id="SoVxfUFMBOoOgOhUIwquVJ">
         <Canvas Id="SQPrpwHMHWLMQLGreO25Cn" CanvasType="Group">
-          <Pad Id="Lt7k0LfiYefNlTHdDzYyFK" SlotId="GtECMVey6HEQOBazFVZjfC" Bounds="101,463" />
           <Pad Id="QDAW9zGkBRMMJ93jaJgUVe" SlotId="FqPFzcn4zhVQXCatRbL7y0" Bounds="396,604" />
           <Pad Id="VM4VzNFc0F3NJL5anmjoCW" SlotId="FqPFzcn4zhVQXCatRbL7y0" Bounds="731,314" />
           <Node Bounds="380,670,934,820" Id="FKJL1qUZeswOEhFcX81Lks">
@@ -491,21 +490,6 @@
               <Pad Id="RzvVJ3ttEctQSp5d0r0Yeb" Comment="" Bounds="1202,1320,45,64" ShowValueBox="true" isIOBox="true" Value="0" />
             </Patch>
           </Node>
-          <Node Bounds="1021,489" Id="SrjhNcl3cUjQTuPn6rrLQB">
-            <p:NodeReference LastCategoryFullName="VL.DMod" LastSymbolSource="VL.DMod.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="Category" Name="DMod" />
-              <Choice Kind="ProcessAppFlag" Name="DModule" />
-            </p:NodeReference>
-            <Pin Id="RqKMFGcEOo9PQPCJ1In1rM" Name="id" Kind="InputPin" />
-            <Pin Id="FsQGPyrppwfNYZsvVWgpaC" Name="MType" Kind="InputPin" />
-            <Pin Id="ELX9i6G9VwaNVV9HEjiaS9" Name="startingTile" Kind="InputPin" />
-            <Pin Id="PZUYzRtgRjTQM8sCW99zqR" Name="segments" Kind="InputPin" />
-            <Pin Id="HWddth9SMA9NCGoPpDiEAC" Name="Salt" Kind="InputPin" />
-            <Pin Id="NkDxMjkfgJ1OpWA0jTrvV5" Name="Update" Kind="ApplyPin" />
-            <Pin Id="JmjP5AroGhCMZ0DAweh1fw" Name="level" Kind="InputPin" />
-            <Pin Id="MotD0piOkGxQNvdGF7eHCe" Name="Output" Kind="StateOutputPin" />
-          </Node>
           <Node Bounds="451,455" Id="KR4fmj6guaHOsHnrDGXTEt">
             <p:NodeReference LastCategoryFullName="VL.DModDNALoader" LastSymbolSource="VL.DModDNALoader.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -516,7 +500,7 @@
             <Pin Id="NuGEwUp23QpO2jFFv4GihO" Name="Has Changed" Kind="OutputPin" />
             <Pin Id="B2s15CqMexvNLfmk5WuVuq" Name="DataSet" Kind="OutputPin" />
           </Node>
-          <Pad Id="Lm5pGHLqRSpLVkh6nRYJZa" Comment="XLSFile" Bounds="567,389,122,15" ShowValueBox="true" isIOBox="true" Value="tests\test.xls">
+          <Pad Id="Lm5pGHLqRSpLVkh6nRYJZa" Comment="XLSFile" Bounds="567,389,122,15" ShowValueBox="true" isIOBox="true" Value="Resources\Modules_DNA.xls">
             <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
@@ -538,7 +522,6 @@
           <Fragment Id="GzVi5jWpFucLEaVXA8soCc" Patch="DdGVUw8ppGzOgS5bsTxJve" Enabled="true" />
           <Fragment Id="FcM7Bhjy5lyPwwAPAEfFua" Patch="CCew0PplgFCNt6nxJINDJP" Enabled="true" />
         </ProcessDefinition>
-        <Slot Id="GtECMVey6HEQOBazFVZjfC" Name="ExcelReader" />
         <Slot Id="FqPFzcn4zhVQXCatRbL7y0" Name="dataSet" />
         <Link Id="O0vtxOmyRh3Ox1iK1nZATf" Ids="QDAW9zGkBRMMJ93jaJgUVe,RLwmijdSYWsLRc0eWII94C" />
         <Link Id="OID6OEuR1x6PqoMVLzpJSW" Ids="QJRObPhHP7FP2vX2HESLz6,MBS5NwX3IHEQW69lBmlHoJ" />
