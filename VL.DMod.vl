@@ -2474,7 +2474,7 @@
                   <Choice Kind="TypeFlag" Name="Int2" />
                 </TypeReference>
                 <TypeReference>
-                  <Choice Kind="TypeFlag" Name="DModule" />
+                  <Choice Kind="TypeFlag" Name="IDModule" />
                 </TypeReference>
               </p:TypeArguments>
             </p:TypeAnnotation>
@@ -3494,12 +3494,12 @@
     ************************ GetDModTypes ************************
 
 -->
-      <Node Name="GetDModTypes" Bounds="737,549,149,102" Id="CRp57m2iYdMQaCfUtuo8qh">
+      <Node Name="GetDModTypes" Bounds="737,549,149,88" Id="CRp57m2iYdMQaCfUtuo8qh">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
         <Patch Id="B9zYRnmtfWdNoLymnCUS0A">
-          <ControlPoint Id="I23yEDTnoIkNWAmRBf5kQA" Bounds="755,634" />
+          <ControlPoint Id="I23yEDTnoIkNWAmRBf5kQA" Bounds="752,620" />
           <Pin Id="RKtUyDRCOciLmWRRSusu5X" Name="Result" Kind="OutputPin" Bounds="757,602" />
           <Link Id="UaepBR87BDAOjybPCzJH2j" Ids="I23yEDTnoIkNWAmRBf5kQA,RKtUyDRCOciLmWRRSusu5X" IsHidden="true" />
           <Node Bounds="749,572,125,19" Id="IxYWqeG79ttLNhUlqL3RB0">
@@ -4658,7 +4658,7 @@
           </Patch>
         </Node>
       </Canvas>
-      <Canvas Id="LkpQwrSJ6YfOc7bhw4EeQA" Name="Modules" Position="221,467">
+      <Canvas Id="LkpQwrSJ6YfOc7bhw4EeQA" Name="Modules" Position="231,458">
         <!--
 
     ************************ RModule ************************
