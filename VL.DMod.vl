@@ -4926,6 +4926,14 @@
                 <ProcessDefinition Id="OWC9duzurYRNfQyZzL3NSW" IsHidden="true" />
               </Patch>
             </Node>
+            <Pad Id="ELZryKldW87QFvijEcKEsF" SlotId="GjS9OwahzMBPNHYcLsTb1y" Bounds="3609,409" />
+            <Pad Id="GgPnV4uk79cPTNV5ZQ2pdS" Comment="CanvasOffset" Bounds="3544,330,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+              </p:TypeAnnotation>
+            </Pad>
+            <ControlPoint Id="B7IRvaJC6UONARmlAMl3m8" Bounds="3685,323" />
+            <ControlPoint Id="Gspw6OwscF9PWv7U9wDGeJ" Bounds="3681,473" />
           </Canvas>
           <ProcessDefinition Id="MgOnvFuWhtJQNwjwunDqra" HasStateOut="true">
             <Fragment Id="K7LIccVdybLLZEcZz0HaMz" Patch="CgfKj7ztFMjMpKP19RPuLP" Enabled="true" />
@@ -4951,6 +4959,8 @@
             <Fragment Id="RqaojNcGGnRMuyphXKevfF" Patch="UH9c72UFef0P3nDfzJSlV4" />
             <Fragment Id="Oui8COk9a49MBCoCiqf9Mx" Patch="CSn5ZRhESOQLfjS71Q9EAU" />
             <Fragment Id="IxLPkXHmtLMOmt76LzTHKP" Patch="HpL0t9tDXvzMEqjkHuLcT1" />
+            <Fragment Id="IF5gX3MbOiSNZXA1rmcxkL" Patch="AlWVFLKwmuTPoi0PJIyBT2" />
+            <Fragment Id="M7ePciF8R3JOFzdOLQZGF4" Patch="QfKeQp1ru8oPMY8kfjwD8j" />
           </ProcessDefinition>
           <Slot Id="MAk6doA5M0KO1Vche3Olc9" Name="State">
             <p:TypeAnnotation p:Type="TypeReference">
@@ -5100,7 +5110,7 @@
           </Slot>
           <Link Id="F8Ijq7LpLU1NJrqIm0rkcg" Ids="S54JvlxWCVoP2O1yGvpnRL,BjJkKqIPY0ILYK3BFuNa28" />
           <Link Id="ScYwlvPyaZWNoIypnmgGQN" Ids="RF64UreqP1DLuu5LwFYmPe,S54JvlxWCVoP2O1yGvpnRL" IsHidden="true" />
-          <Patch Id="CgfKj7ztFMjMpKP19RPuLP" Name="Create" ParticipatingElements="UMV0Vt6ogX2OaTuDLFJXaV,QYSoeNOveGOL6MRQ0aRdJw,PXEInYrsNxjOCCwI7cQth9,N8JT51IywvSN8Y1U3SRZmy,VR5jXIbhxr1LQm8hSdT6rX,T4TjVlf2bvZPI4ndIJNIZL,CSdVqFokfASM2UQPqVW0if,LhUGHrqTxZTNcUGbuAiEMu,IRgvFmKZ9jEOg1hQOxKEZ8">
+          <Patch Id="CgfKj7ztFMjMpKP19RPuLP" Name="Create" ParticipatingElements="UMV0Vt6ogX2OaTuDLFJXaV,QYSoeNOveGOL6MRQ0aRdJw,PXEInYrsNxjOCCwI7cQth9,N8JT51IywvSN8Y1U3SRZmy,VR5jXIbhxr1LQm8hSdT6rX,T4TjVlf2bvZPI4ndIJNIZL,CSdVqFokfASM2UQPqVW0if,LhUGHrqTxZTNcUGbuAiEMu,IRgvFmKZ9jEOg1hQOxKEZ8,Ov56ZgvDWcIM5tqNIYwSeN">
             <Pin Id="NmnzreDVrXAML4RoQ02oYX" Name="State" Kind="InputPin" />
             <Pin Id="P4zlxHoxwG8MwuwsKxJtl4" Name="DCanvasses" Kind="InputPin" />
           </Patch>
@@ -5227,6 +5237,22 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
           </Slot>
+          <Slot Id="GjS9OwahzMBPNHYcLsTb1y" Name="CanvasOffset">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="Ov56ZgvDWcIM5tqNIYwSeN" Ids="GgPnV4uk79cPTNV5ZQ2pdS,ELZryKldW87QFvijEcKEsF" />
+          <Link Id="B9sMmSrf73SP144XCMU71z" Ids="B7IRvaJC6UONARmlAMl3m8,ELZryKldW87QFvijEcKEsF" />
+          <Link Id="JuNkCpCgZmyL2lz0MS9Qva" Ids="FtCV5suH7GBPSPZNmCtCNT,B7IRvaJC6UONARmlAMl3m8" IsHidden="true" />
+          <Patch Id="AlWVFLKwmuTPoi0PJIyBT2" Name="SetCanvasOffset">
+            <Pin Id="FtCV5suH7GBPSPZNmCtCNT" Name="CanvasOffset" Kind="InputPin" />
+          </Patch>
+          <Link Id="KLTv1Hzpy8qPbMRSIvdhxN" Ids="ELZryKldW87QFvijEcKEsF,Gspw6OwscF9PWv7U9wDGeJ" />
+          <Link Id="BMqyvl3ryVsNScMqDw0IQK" Ids="Gspw6OwscF9PWv7U9wDGeJ,GFejsOacmuSLgjzwBdo4fv" IsHidden="true" />
+          <Patch Id="QfKeQp1ru8oPMY8kfjwD8j" Name="GetCanvasOffset">
+            <Pin Id="GFejsOacmuSLgjzwBdo4fv" Name="CanvasOffset" Kind="OutputPin" />
+          </Patch>
         </Patch>
       </Node>
       <Canvas Id="Uu4qO0B3zIyNcfC1KLkEFj" Name="Serializing" Position="923,120">
