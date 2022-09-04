@@ -3216,6 +3216,9 @@
                 <Link Id="JA9T8O2UCwmO1vtDSF93Ev" Ids="UtJsIhEbTwQNQYFZeu76Rl,VAxvWy2qRl3LMxeiR6KFTO" />
               </Patch>
             </Node>
+            <Pad Id="Tf7aa351baDQJZPMH8gD6f" SlotId="CAClwY9MAu3QDBP4eFrkNu" Bounds="1462,384" />
+            <ControlPoint Id="OW9qCzCTVaGL4vnjIKnmar" Bounds="1463,445" />
+            <ControlPoint Id="FXc3B57sD68NGej2rDTInq" Bounds="1462,326" />
           </Canvas>
           <ProcessDefinition Id="Ams6oh5Tqb8OJUcPF7v2vN" IsHidden="true">
             <Fragment Id="FoScZZVrqfLNLFckyzYUqO" Patch="RrlYE2kmXKuMVK25Dvp1yl" Enabled="true" />
@@ -3236,6 +3239,8 @@
             <Fragment Id="CC23EP3KNV9MxxFTZJsUkM" Patch="DDXGUlLycigLwPmGdPVHei" />
             <Fragment Id="MdhOBxpSwq5QSfmFdIpp8z" Patch="Jl7yluNIp4APsDsWDEUbQ1" />
             <Fragment Id="KOpR51DES9PPpvYe8IerMZ" Patch="Agji036Fv1ZLr51nqqr3le" />
+            <Fragment Id="IRpUZP2xdffMkn6BEcFN1Z" Patch="TlntOnnaDB9Oskku81ux6D" />
+            <Fragment Id="EGrQzotCNjVPGAvTCqCGro" Patch="OCwea6xAOwiMneALpZOpYK" />
           </ProcessDefinition>
           <Slot Id="VwZP033bMYMOScUhw4KxNp" Name="dimensions">
             <p:TypeAnnotation p:Type="TypeReference">
@@ -3470,6 +3475,21 @@
           <Link Id="NtZhKNY1hGZNvBFf0nhwr0" Ids="EdSlsHzCUdvPOLXT7iAtrT,ALIt0vtpvadMao9KlOQDNy" />
           <Link Id="LXWDDWzHql0Lzs9CbY1pJI" Ids="A43PMnWb6uMQITESuUFLrS,Ahikwebspt1LBKek82ph2j" />
           <Link Id="QzVBhZfysnlM8N7n1Mi9bI" Ids="F7XGXANmDkeL8OdFNQQ3W1,CIbQTsEUdUgLT7CaDnZhNW" />
+          <Slot Id="CAClwY9MAu3QDBP4eFrkNu" Name="Offset">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="I83b2nWv2ejLiEjHsf90U7" Ids="Tf7aa351baDQJZPMH8gD6f,OW9qCzCTVaGL4vnjIKnmar" />
+          <Link Id="AYotNLrHDeZNnzi5DxwZVZ" Ids="OW9qCzCTVaGL4vnjIKnmar,MkJ93uB4swmPGNGNGtEqov" IsHidden="true" />
+          <Patch Id="TlntOnnaDB9Oskku81ux6D" Name="GetOffset">
+            <Pin Id="MkJ93uB4swmPGNGNGtEqov" Name="Offset" Kind="OutputPin" />
+          </Patch>
+          <Link Id="Psup1xk0b0HMx1TamOurri" Ids="FXc3B57sD68NGej2rDTInq,Tf7aa351baDQJZPMH8gD6f" />
+          <Link Id="AhP4FwGeBnaQGO7GS8tTYh" Ids="T6Tm45WxZqFPLnwwMQt1Ec,FXc3B57sD68NGej2rDTInq" IsHidden="true" />
+          <Patch Id="OCwea6xAOwiMneALpZOpYK" Name="SetOffset">
+            <Pin Id="T6Tm45WxZqFPLnwwMQt1Ec" Name="Offset" Kind="InputPin" />
+          </Patch>
         </Patch>
       </Node>
       <!--
@@ -4842,7 +4862,7 @@
             <Pad Id="UEKs4Y92Z83LyvPU68WV2w" SlotId="HVlywOY7OZTPdxZXhflboV" Bounds="113,529" />
             <Pad Id="P2rg8ouHHW0Pi1sDZnM608" SlotId="EsoQ6q58aYePIgkbWbmeu3" Bounds="2254,387" />
             <ControlPoint Id="U2iQ1NvRTUVMfJlOVoXrYF" Bounds="2254,299" />
-            <ControlPoint Id="RFLnyeuYX35LH5Vcczpebg" Bounds="2268,507" />
+            <ControlPoint Id="RFLnyeuYX35LH5Vcczpebg" Bounds="2256,502" />
             <Pad Id="BjJkKqIPY0ILYK3BFuNa28" SlotId="NPG4rxMHXHUMOVrCkrN5zu" Bounds="1666,696" />
             <ControlPoint Id="S54JvlxWCVoP2O1yGvpnRL" Bounds="1667,617" />
             <ControlPoint Id="BRLWG84kJgAOfvMgvbweob" Bounds="1662,812" />
@@ -4882,6 +4902,30 @@
               </p:TypeAnnotation>
             </Pad>
             <ControlPoint Id="TELdbU2AEEhODOPJAT51IO" Bounds="3060,500" />
+            <Pad Id="RMh4jgDVKYKPR5SvghVGIs" SlotId="GsITJyXPk6xN1oyl8RoojD" Bounds="3318,403" />
+            <ControlPoint Id="Q0lX7eDb18MOsjDYHFbnKS" Bounds="3318,492" />
+            <ControlPoint Id="AkY5wBiJeW8MhymUm80dx9" Bounds="3366,339" />
+            <ControlPoint Id="KY0JBFMCDOOM8rpLxGivbf" Bounds="3396,459" />
+            <Pad Id="GZs3eBIT64ML6PTe2XzRas" SlotId="NhM9a6ECE2vOhfzpzVuk54" Bounds="90,321" />
+            <!--
+
+    ************************ IDmodSettings ************************
+
+-->
+            <Node Name="IDmodSettings" Bounds="352,137" Id="OOf9TxDhJT9LtUAmAhoPm2">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+                <Choice Kind="InterfaceDefinition" Name="Interface" />
+              </p:NodeReference>
+              <Patch Id="NPrhjlqFwq9M4NpSutKyhG">
+                <Canvas Id="DFYfL9Eb3m2LNO6yXdwgi4" BordersChecked="false" CanvasType="Group" />
+                <!--
+
+    ************************  ************************
+
+-->
+                <ProcessDefinition Id="OWC9duzurYRNfQyZzL3NSW" IsHidden="true" />
+              </Patch>
+            </Node>
           </Canvas>
           <ProcessDefinition Id="MgOnvFuWhtJQNwjwunDqra" HasStateOut="true">
             <Fragment Id="K7LIccVdybLLZEcZz0HaMz" Patch="CgfKj7ztFMjMpKP19RPuLP" Enabled="true" />
@@ -4905,6 +4949,8 @@
             <Fragment Id="QRE5MamuawUPslsHeJVZ4d" Patch="IDjSogTmnTOLbJ6dZxmOgI" />
             <Fragment Id="N2tn8ieAJlTLGOVFW91mGi" Patch="VgV0CvsS5ndNB9RKp3xX6A" />
             <Fragment Id="RqaojNcGGnRMuyphXKevfF" Patch="UH9c72UFef0P3nDfzJSlV4" />
+            <Fragment Id="Oui8COk9a49MBCoCiqf9Mx" Patch="CSn5ZRhESOQLfjS71Q9EAU" />
+            <Fragment Id="IxLPkXHmtLMOmt76LzTHKP" Patch="HpL0t9tDXvzMEqjkHuLcT1" />
           </ProcessDefinition>
           <Slot Id="MAk6doA5M0KO1Vche3Olc9" Name="State">
             <p:TypeAnnotation p:Type="TypeReference">
@@ -5062,6 +5108,7 @@
             <Pin Id="PwJJRTgGzeHND8ngDJxkzI" Name="Id" Kind="OutputPin" />
             <Pin Id="DDiMnK3uI8cQOOObH29e3Z" Name="State" Kind="OutputPin" />
             <Pin Id="PZZ6fdfwlhiOngWgaJgjZK" Name="DCanvasses" Kind="OutputPin" />
+            <Pin Id="N7hNEOybLdKLN7jihG7stp" Name="SelectedCanvas" Kind="OutputPin" />
           </Patch>
           <Patch Id="SoF6Fs8VpTyOF1EoY6Gd6Z" Name="SetState">
             <Pin Id="LxiO9QhW1srMU8ecW8FUY1" Name="State" Kind="InputPin" />
@@ -5150,6 +5197,36 @@
           <Patch Id="UH9c72UFef0P3nDfzJSlV4" Name="GetTilesSpacing">
             <Pin Id="Q3520V0ZnsvMM5RxrP0l6j" Name="TilesSpacing" Kind="OutputPin" />
           </Patch>
+          <Slot Id="GsITJyXPk6xN1oyl8RoojD" Name="SelectedCanvas">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="DCanvas" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="PQFqds4ZupxOODtW5IlSfY" Ids="Q0lX7eDb18MOsjDYHFbnKS,N7hNEOybLdKLN7jihG7stp" IsHidden="true" />
+          <Link Id="Orrpwvqv5fhNkLYN0ddRhQ" Ids="RMh4jgDVKYKPR5SvghVGIs,Q0lX7eDb18MOsjDYHFbnKS" />
+          <Link Id="FKaJlZnkbo0LKOw1CqHDZw" Ids="AkY5wBiJeW8MhymUm80dx9,RMh4jgDVKYKPR5SvghVGIs" />
+          <Link Id="Qop4XqLEDqBQTMEjZGesGC" Ids="L2Gwu1DpqogLlIywkiaWgm,AkY5wBiJeW8MhymUm80dx9" IsHidden="true" />
+          <Patch Id="CSn5ZRhESOQLfjS71Q9EAU" Name="SetSelectedCanvas">
+            <Pin Id="L2Gwu1DpqogLlIywkiaWgm" Name="SelectedCanvas" Kind="InputPin" />
+          </Patch>
+          <Link Id="AbliMMhGIHcOeIkhiyUVfM" Ids="RMh4jgDVKYKPR5SvghVGIs,KY0JBFMCDOOM8rpLxGivbf" />
+          <Link Id="GEioWfukfrHMQeJv6cPXjq" Ids="KY0JBFMCDOOM8rpLxGivbf,JtBKYnayq7kN0Ru7UB0tvw" IsHidden="true" />
+          <Patch Id="HpL0t9tDXvzMEqjkHuLcT1" Name="GetSelectedCanvas">
+            <Pin Id="JtBKYnayq7kN0Ru7UB0tvw" Name="SelectedCanvas" Kind="OutputPin" />
+          </Patch>
+          <Slot Id="NhM9a6ECE2vOhfzpzVuk54" Name="Settings">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Dictionary" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="IDmodSettings" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Slot>
         </Patch>
       </Node>
       <Canvas Id="Uu4qO0B3zIyNcfC1KLkEFj" Name="Serializing" Position="923,120">
