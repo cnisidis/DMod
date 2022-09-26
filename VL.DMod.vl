@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="IUs6DG4ZlQWMmXus1qbZlD" LanguageVersion="2021.4.10.1018" Version="0.128">
-  <NugetDependency Id="MzPeXVDmgXXOG5rgGVvkp9" Location="VL.CoreLib" Version="2021.4.10-1018-g933c4b477f" />
+<Document xmlns:p="property" Id="IUs6DG4ZlQWMmXus1qbZlD" LanguageVersion="2021.4.11.1152" Version="0.128">
+  <NugetDependency Id="MzPeXVDmgXXOG5rgGVvkp9" Location="VL.CoreLib" Version="2021.4.11-1152-g29d61bbe61" />
   <Patch Id="C9rNyQLI7DsNhgbVrX6vgS">
     <Canvas Id="K0yW0SHxSWAOS9GaYDKCN3" DefaultCategory="VL.DMod" CanvasType="FullCategory">
       <!--
@@ -5150,11 +5150,6 @@
                   <ControlPoint Id="L2gBxWigANIOOaamLdvdsy" Bounds="829,580" />
                   <ControlPoint Id="QvHbY4TnfuuNmP8V7Z4Smy" Bounds="913,580" />
                 </Canvas>
-                <!--
-
-    ************************  ************************
-
--->
                 <ProcessDefinition Id="TuRHIi4UbC9PmZgjxrEbHh" IsHidden="true">
                   <Fragment Id="CaAsmsgX9hTP49PVLAmD84" Patch="CdDwdkT5ibJPdOe6TN1Cub" Enabled="true" />
                   <Fragment Id="HebStja3I3PPJxZzz1PEj5" Patch="MoskT9c2M1LNYsre7EER9Q" />
@@ -5350,6 +5345,14 @@
               <Pin Id="FSwTf6PDDWUPXXoqWmK8Da" Name="KeyPressed" Kind="InputPin" />
               <Pin Id="PtfGYcmhArAOoccsfr7wpd" Name="Output" Kind="StateOutputPin" />
             </Node>
+            <Pad Id="KyeWWU7wFMfP3Fp51sTycm" SlotId="A24rYSlvKAHMuQMTSqDwfm" Bounds="4318,424" />
+            <Pad Id="A845ZRydxwFLbF47RurSKL" Comment="DNAModulesFile" Bounds="4317,336,283,19" ShowValueBox="true" isIOBox="true" Value="Resources\Modules_DNA.xls">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pad>
+            <ControlPoint Id="BFBZ4wVyjKNPqsp4FFn53G" Bounds="4441,259" />
+            <ControlPoint Id="UkF6uER2bnGLCG7Z53v0bv" Bounds="4387,503" />
           </Canvas>
           <ProcessDefinition Id="MgOnvFuWhtJQNwjwunDqra" HasStateOut="true">
             <Fragment Id="K7LIccVdybLLZEcZz0HaMz" Patch="CgfKj7ztFMjMpKP19RPuLP" Enabled="true" />
@@ -5381,6 +5384,8 @@
             <Fragment Id="ESgQnPr7wX3PNO6oCFXp6P" Patch="JLuXOVUulnQPiJJt5udtX0" />
             <Fragment Id="IcxopZeDId2LDHPwhELfc0" Patch="TRZqsBDabXJO9qpcwRDaSr" />
             <Fragment Id="E3G066VOjnkOVVIkDr3RDJ" Patch="VeYVEHZsW6aPhShHDiOAEG" />
+            <Fragment Id="Aj7VyKvP1VjQC75r1J1zEy" Patch="Vw7vY2S7l4dOJ5FxQeslju" />
+            <Fragment Id="DuaLmjdtW5WLNpVevvgGVd" Patch="BozsIz70r1TPsKfqPZASoY" />
           </ProcessDefinition>
           <Slot Id="MAk6doA5M0KO1Vche3Olc9" Name="State">
             <p:TypeAnnotation p:Type="TypeReference">
@@ -5530,7 +5535,7 @@
           </Slot>
           <Link Id="F8Ijq7LpLU1NJrqIm0rkcg" Ids="S54JvlxWCVoP2O1yGvpnRL,BjJkKqIPY0ILYK3BFuNa28" />
           <Link Id="ScYwlvPyaZWNoIypnmgGQN" Ids="RF64UreqP1DLuu5LwFYmPe,S54JvlxWCVoP2O1yGvpnRL" IsHidden="true" />
-          <Patch Id="CgfKj7ztFMjMpKP19RPuLP" Name="Create" ParticipatingElements="UMV0Vt6ogX2OaTuDLFJXaV,QYSoeNOveGOL6MRQ0aRdJw,PXEInYrsNxjOCCwI7cQth9,N8JT51IywvSN8Y1U3SRZmy,VR5jXIbhxr1LQm8hSdT6rX,T4TjVlf2bvZPI4ndIJNIZL,CSdVqFokfASM2UQPqVW0if,LhUGHrqTxZTNcUGbuAiEMu,IRgvFmKZ9jEOg1hQOxKEZ8,Ov56ZgvDWcIM5tqNIYwSeN,FJtdWVwRhk1MUbl5cQRG90">
+          <Patch Id="CgfKj7ztFMjMpKP19RPuLP" Name="Create" ParticipatingElements="UMV0Vt6ogX2OaTuDLFJXaV,QYSoeNOveGOL6MRQ0aRdJw,PXEInYrsNxjOCCwI7cQth9,N8JT51IywvSN8Y1U3SRZmy,VR5jXIbhxr1LQm8hSdT6rX,T4TjVlf2bvZPI4ndIJNIZL,CSdVqFokfASM2UQPqVW0if,FJtdWVwRhk1MUbl5cQRG90,LhUGHrqTxZTNcUGbuAiEMu,IRgvFmKZ9jEOg1hQOxKEZ8,Ov56ZgvDWcIM5tqNIYwSeN,N12E0iR94rSPS1Zztfq3UM">
             <Pin Id="NmnzreDVrXAML4RoQ02oYX" Name="State" Kind="InputPin" />
             <Pin Id="P4zlxHoxwG8MwuwsKxJtl4" Name="DCanvasses" Kind="InputPin" />
           </Patch>
@@ -5704,6 +5709,22 @@
             <Pin Id="St0VsTyVAn9NcqD47E7ive" Name="Controls" Kind="OutputPin" />
           </Patch>
           <Link Id="Ai7G0ikOELCMOA15cS7TnM" Ids="PtfGYcmhArAOoccsfr7wpd,L79w8oI7w1FLiHd8k0orUg" />
+          <Slot Id="A24rYSlvKAHMuQMTSqDwfm" Name="DNAModulesFile">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="N12E0iR94rSPS1Zztfq3UM" Ids="A845ZRydxwFLbF47RurSKL,KyeWWU7wFMfP3Fp51sTycm" />
+          <Link Id="U3mWAUogII0Mvtq5OcDYTX" Ids="BFBZ4wVyjKNPqsp4FFn53G,KyeWWU7wFMfP3Fp51sTycm" />
+          <Link Id="PeryAI1OWQtQZa21upexy9" Ids="O33I80KF5FuQFpAOeZPcm1,BFBZ4wVyjKNPqsp4FFn53G" IsHidden="true" />
+          <Patch Id="Vw7vY2S7l4dOJ5FxQeslju" Name="SetDNAModulesFile">
+            <Pin Id="O33I80KF5FuQFpAOeZPcm1" Name="DNAModulesFile" Kind="InputPin" />
+          </Patch>
+          <Link Id="NF3kETks6H1LQIrNkeZC6K" Ids="KyeWWU7wFMfP3Fp51sTycm,UkF6uER2bnGLCG7Z53v0bv" />
+          <Link Id="IorQdxG3dhOM0nLJfYBUAu" Ids="UkF6uER2bnGLCG7Z53v0bv,NU4VzzoRKVsMEKpWaqRtNj" IsHidden="true" />
+          <Patch Id="BozsIz70r1TPsKfqPZASoY" Name="GetDNAModulesFile">
+            <Pin Id="NU4VzzoRKVsMEKpWaqRtNj" Name="DNAModulesFile" Kind="OutputPin" />
+          </Patch>
         </Patch>
       </Node>
       <Canvas Id="Uu4qO0B3zIyNcfC1KLkEFj" Name="Serializing" Position="923,120">
@@ -7101,6 +7122,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="LB8qg8mr4YLO6QgTXqJZiL" Location="VL.CoreLib" Version="2021.4.10-1018-g933c4b477f" />
+  <NugetDependency Id="LB8qg8mr4YLO6QgTXqJZiL" Location="VL.CoreLib" Version="2021.4.11-1152-g29d61bbe61" />
   <PlatformDependency Id="DWB5ARsxOrLNfZAZiSmSWF" Location="./src/VL.DMod.Helpers/bin/Debug/netstandard2.0/VL.DMod.Helpers.dll" />
 </Document>
