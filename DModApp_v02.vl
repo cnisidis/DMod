@@ -4584,15 +4584,6 @@
                 <ControlPoint Id="Ho5p1knoKjvPpvhTrwk7VW" Bounds="1472,35" Alignment="Bottom" />
               </Node>
               <Pad Id="V3ryJ5dI5bxQRsSTX9UYuF" SlotId="CGjjeBJ5jIePR22OL5nu75" Bounds="1068,80" />
-              <Pad Id="DBskRZ7rf7QL2VI7Ffsd4R" Comment="Force" Bounds="826,-307,55,58" ShowValueBox="true" isIOBox="true" Value="False">
-                <p:TypeAnnotation>
-                  <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-                  <FullNameCategoryReference ID="Primitive" />
-                </p:TypeAnnotation>
-                <p:ValueBoxSettings>
-                  <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-                </p:ValueBoxSettings>
-              </Pad>
               <Overlay Id="Tnq207YS0QINXQyJVXFtjw" Name="Load Models from XLS" Bounds="754,-502,834,593">
                 <p:ColorIndex p:Type="Int32">7</p:ColorIndex>
               </Overlay>
@@ -5601,6 +5592,7 @@
                 </Patch>
               </Node>
               <Pad Id="B85c9zI1BfMNWIhS6wxBOx" Comment="Grid" Bounds="1374,470,190,132" ShowValueBox="true" isIOBox="true" />
+              <ControlPoint Id="Q8LSKkBNQBoMuuxxcUQhDh" Bounds="943,-642" />
             </Canvas>
             <ProcessDefinition Id="L15wLO8PAg4NDNjBHnhF14">
               <Fragment Id="StiVNbIKLbHMee6jlL3wzZ" Patch="PYvJsq37ZpWL8snF8P7cVR" Enabled="true" />
@@ -5613,18 +5605,8 @@
             <Link Id="KwEMEbFjjghPeCHKdKFkSB" Ids="UgAU82SSKupO175TImevfp,N1yysPolQz6LVDnZeRwxCI" />
             <Link Id="TRMiJe6YN8nPGrA8JDCRtf" Ids="ROv4thCWAPQLCfSx5AgYHm,AMqr6cicSqYOLns38S8nLd" />
             <Link Id="SLWtvQa9fHkMMrIpaiWO8Q" Ids="AMqr6cicSqYOLns38S8nLd,V3ryJ5dI5bxQRsSTX9UYuF" />
-            <Link Id="I7A0ZIftGWUQIAzynNs4Hx" Ids="DBskRZ7rf7QL2VI7Ffsd4R,AnlsTNrNjNuP75XAIoTKch" />
             <Link Id="ACNF2eZa4ilOCMqmlb9Jj6" Ids="ROv4thCWAPQLCfSx5AgYHm,HqINd3lHCBINEFQp4qjpRk" />
             <Link Id="R6fEpLV5yQwNbbLQBH1MQW" Ids="LTeT7NC49R8M0UlkTYgBKz,LAaT8ECBJpiMlojrd9n9Yz" />
-            <Patch Id="PYvJsq37ZpWL8snF8P7cVR" Name="Create" />
-            <Patch Id="Ct6WsiHFxvfPot4KPbGxJH" Name="Update">
-              <Pin Id="HoDever8LuqPvJYzE36mFP" Name="Engine" Kind="InputPin">
-                <p:TypeAnnotation>
-                  <Choice Kind="TypeFlag" Name="DModEngine" />
-                </p:TypeAnnotation>
-              </Pin>
-              <Pin Id="JE51NxF7sGNMgn7VeNSY7U" Name="Output" Kind="OutputPin" Bounds="885,911" />
-            </Patch>
             <Link Id="MHitHjDG7SYPd7KwfUzsDo" Ids="R2pWckHZKlBOxXA4d3AW9N,R806lvaNzP8PLmj5CZAuFG" />
             <Link Id="C2xbGP1bklxMyvQJwPD2zR" Ids="MtQFGmOytxgOHzrLMcADp1,GI89WdAe2IVO5NMYUb3MIt" />
             <Link Id="TH8YsUccoRnN77o2LmaQyd" Ids="LTeT7NC49R8M0UlkTYgBKz,EgFnXGnoXBAQI1vifWokUB" />
@@ -5655,6 +5637,18 @@
             <Link Id="VTfPwtgyviHLnCpsKvHoA2" Ids="QU7nRQtAkl1P5BhEhujTUD,QfirI8B1zhQOPwbCWGLWVa" />
             <Link Id="Vya1cpaWZ8LNyzSj7VwJ5a" Ids="MtQFGmOytxgOHzrLMcADp1,Qjl68g9hY6aO5tAssTUmrA" />
             <Link Id="SrB2whP8AR7PUpf8uAZVxd" Ids="QymdQxe0dVhLhtwuSLt1HE,B85c9zI1BfMNWIhS6wxBOx" />
+            <Link Id="QGPzVzGJWrVP5dWF7XDG6I" Ids="Q8LSKkBNQBoMuuxxcUQhDh,AnlsTNrNjNuP75XAIoTKch" />
+            <Link Id="D4jQNH8o8WnNE9XZZ7QD9k" Ids="HjuF6xFiMlGQMlh0OvRLNk,Q8LSKkBNQBoMuuxxcUQhDh" IsHidden="true" />
+            <Patch Id="PYvJsq37ZpWL8snF8P7cVR" Name="Create" />
+            <Patch Id="Ct6WsiHFxvfPot4KPbGxJH" Name="Update">
+              <Pin Id="HjuF6xFiMlGQMlh0OvRLNk" Name="Reload" Kind="InputPin" Bounds="942,-642" />
+              <Pin Id="HoDever8LuqPvJYzE36mFP" Name="Engine" Kind="InputPin">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="DModEngine" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="JE51NxF7sGNMgn7VeNSY7U" Name="Output" Kind="OutputPin" Bounds="885,911" />
+            </Patch>
           </Patch>
         </Node>
       </Canvas>
@@ -8155,7 +8149,7 @@
             <Pin Id="IVWO5ifRtZhMM5vnEz3WSf" Name="Update" Kind="ApplyPin" />
             <Pin Id="EADXyjYDiwaLL2uaG9IAwS" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="IBS9fXNYxhSNidJ4WHddlH" Comment="Text" Bounds="2214,1195,35,15" ShowValueBox="true" isIOBox="true" Value="SelectedModule">
+          <Pad Id="IBS9fXNYxhSNidJ4WHddlH" Comment="Text" Bounds="2209,1191,35,15" ShowValueBox="true" isIOBox="true" Value="SelectedModule">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -8170,6 +8164,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ModuleModelPaletteWidget" />
             </p:NodeReference>
+            <Pin Id="TQnozaj4lDDN5II9HZi1lf" Name="Reload" Kind="InputPin" />
             <Pin Id="MHHwHHMIT4QPIodrUGQIsm" Name="Engine" Kind="InputPin" />
             <Pin Id="J4tBKG3mI4ZLH5z5zvsToV" Name="Output" Kind="OutputPin" />
           </Node>
@@ -8202,7 +8197,7 @@
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="2322,1109,54,19" Id="D8A8xgWGam4QLfNGWgNTp5">
+          <Node Bounds="2321,1082,54,19" Id="D8A8xgWGam4QLfNGWgNTp5">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OnOpen" />
@@ -8210,7 +8205,7 @@
             <Pin Id="Gu6VN7ZebgfOdf3FnAh65T" Name="Simulate" Kind="InputPin" DefaultValue="False" />
             <Pin Id="KqxkvBZjI6DMuE1BcQxEzs" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="LKJcQf71Lg3OII4WUaAPnq" SlotId="IRuEX8mgdViMiAfPG3DkrU" Bounds="2169,919" />
+          <Pad Id="LKJcQf71Lg3OII4WUaAPnq" SlotId="IRuEX8mgdViMiAfPG3DkrU" Bounds="2304,1044" />
           <Overlay Id="HFIys8FOY32PARgdUhzGqH" Name="Initialize Library and load Models" Bounds="2114,796,490,662">
             <p:ColorIndex p:Type="Int32">6</p:ColorIndex>
           </Overlay>
@@ -8346,6 +8341,7 @@
             <Pin Id="JsqddfaDq6mOCtDdO1xlmf" Name="Type" Kind="OutputPin" />
           </Node>
           <Pad Id="RkSVRf7BQSjNQ2DKmsvZ7Q" Comment="Type" Bounds="865,1145,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="N00pL6CUeFgPj2mMt9FRXB" SlotId="SonPO5GOelCPVJ7yWOx5eZ" Bounds="2323,914" />
         </Canvas>
         <Patch Id="UmdemNL6gQmLcviLSu7o9E" Name="Create" ParticipatingElements="HXl5ARzoHT8NWPgCw4MBQn" />
         <Patch Id="Ec5mMe8kmX3LwvzLqByEst" Name="Update" />
@@ -8487,6 +8483,9 @@
         <Link Id="LunLGP9aJpZL3WNiuIQMxr" Ids="Ulkh8mZQtDHP7CT6cZld3c,Hrr5z41KfrpOOU4bIzcJ9C" />
         <Link Id="LHMj5KlAh5jMtOHMauDpU1" Ids="EQ4sS1rzfDZOJoWx0VpZim,A1qGcMlRvBNPVZa4OtMfhX" />
         <Link Id="TjL3RpVeo4ZMCwjE2Jxu3R" Ids="JsqddfaDq6mOCtDdO1xlmf,RkSVRf7BQSjNQ2DKmsvZ7Q" />
+        <Slot Id="SonPO5GOelCPVJ7yWOx5eZ" Name="ReloadDNA" />
+        <Link Id="BQPdq6XtgIPLFUThMA9uqs" Ids="N00pL6CUeFgPj2mMt9FRXB,Gu6VN7ZebgfOdf3FnAh65T" />
+        <Link Id="CleYeZhhjyyPwGcu3FT3tX" Ids="N00pL6CUeFgPj2mMt9FRXB,TQnozaj4lDDN5II9HZi1lf" />
       </Patch>
     </Node>
   </Patch>
