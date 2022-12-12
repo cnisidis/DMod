@@ -5589,8 +5589,8 @@
             <Pad Id="P2rg8ouHHW0Pi1sDZnM608" SlotId="EsoQ6q58aYePIgkbWbmeu3" Bounds="2254,387" />
             <ControlPoint Id="U2iQ1NvRTUVMfJlOVoXrYF" Bounds="2254,299" />
             <ControlPoint Id="RFLnyeuYX35LH5Vcczpebg" Bounds="2256,502" />
-            <Pad Id="BjJkKqIPY0ILYK3BFuNa28" SlotId="NPG4rxMHXHUMOVrCkrN5zu" Bounds="1666,696" />
-            <ControlPoint Id="S54JvlxWCVoP2O1yGvpnRL" Bounds="1667,617" />
+            <Pad Id="BjJkKqIPY0ILYK3BFuNa28" SlotId="NPG4rxMHXHUMOVrCkrN5zu" Bounds="1663,696" />
+            <ControlPoint Id="S54JvlxWCVoP2O1yGvpnRL" Bounds="1663,617" />
             <ControlPoint Id="BRLWG84kJgAOfvMgvbweob" Bounds="1663,817" />
             <Pad Id="UchIkiSVHUhLgbn6vdXwgj" SlotId="DYJwTGEHxvaQaz78Rt9yTs" Bounds="2566,396" />
             <Node Bounds="2564,333,34,19" Id="CSdVqFokfASM2UQPqVW0if">
@@ -6445,7 +6445,7 @@
           <Patch Id="HGsd6nLvxVSPo9P4pScdmt" Name="CurrentCanvasUpdated">
             <Pin Id="LzJS76CxIMqLIGIRXMDi7v" Name="CurrentDCanvasUpdated" Kind="OutputPin" />
           </Patch>
-          <Patch Id="GteYoTL7TWvMw5PTjr49yb" Name="SelectTile">
+          <Patch Id="GteYoTL7TWvMw5PTjr49yb" Name="SetSelectedTile">
             <Pin Id="RF64UreqP1DLuu5LwFYmPe" Name="SelectedTile" Kind="InputPin" />
           </Patch>
           <Patch Id="Jg5y6YFjBjXPZr0xf5IfTN" Name="GetSelectedTile">
@@ -6528,7 +6528,7 @@
     ************************ DTileSerializer ************************
 
 -->
-        <Node Name="DTileSerializer" Bounds="730,365" Id="C54jBuvvWnHMBkqYaLtUkT">
+        <Node Name="DTileSerializer" Bounds="732,317" Id="C54jBuvvWnHMBkqYaLtUkT">
           <p:NodeReference>
             <Choice Kind="ClassDefinition" Name="Class" />
             <FullNameCategoryReference ID="Primitive" />
@@ -6543,7 +6543,7 @@
               <ControlPoint Id="E4kFps6kAGRMnuOskGHQnk" Bounds="866,137" />
               <ControlPoint Id="Vfwr5xFFntBLmOdXx5SLC3" Bounds="944,136" />
               <ControlPoint Id="RLJqj9u9X5BOSPNzIo1Ymr" Bounds="849,455" />
-              <Node Bounds="866,232,66,26" Id="J1y9Wb5ukc2PaMp1JIeWyY">
+              <Node Bounds="866,231,66,26" Id="J1y9Wb5ukc2PaMp1JIeWyY">
                 <p:NodeReference LastCategoryFullName="System.Serialization" LastSymbolSource="System.Serialization.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Deserialize" />
@@ -6579,7 +6579,7 @@
                 </Pin>
                 <Pin Id="D02rERJBEV5OEuoj1aEAXY" Name="Result" Kind="OutputPin" />
               </Node>
-              <Node Bounds="1032,236,66,26" Id="FPoLfu8961tNuQCB31cxKU">
+              <Node Bounds="1032,231,66,26" Id="FPoLfu8961tNuQCB31cxKU">
                 <p:NodeReference LastCategoryFullName="System.Serialization" LastSymbolSource="System.Serialization.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Deserialize" />
@@ -6597,7 +6597,7 @@
                 </Pin>
                 <Pin Id="T93CI2obGJbMSLxb6chJtW" Name="Result" Kind="OutputPin" />
               </Node>
-              <Overlay Id="LyfLgCOlAFaNDOUZvfGhbK" Name="Deserialize" Bounds="812,97,394,419">
+              <Overlay Id="LyfLgCOlAFaNDOUZvfGhbK" Name="Deserialize" Bounds="812,97,516,419">
                 <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
               </Overlay>
               <ControlPoint Id="HLIqC3DqEj5MW9wZjxDb33" Bounds="365,155" />
@@ -6670,6 +6670,7 @@
                 <Pin Id="L2fkIn1OOAPQUEUCviO3F7" Name="Input 3" Kind="InputPin" />
                 <Pin Id="Ez12EV0qZbMM9xeoCvzrPJ" Name="Result" Kind="OutputPin" />
                 <Pin Id="CVDOYbfzbDtLnkCzR8ZHdq" Name="Input 4" Kind="InputPin" />
+                <Pin Id="NyS6M34rdGSNltXv9grhRG" Name="Input 5" Kind="InputPin" />
               </Node>
               <Overlay Id="Qqd4BhuGb56MxS3ZGBzev3" Name="Serialize" Bounds="343,112,419,255">
                 <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
@@ -6742,7 +6743,7 @@
                 <Pin Id="Er1810Vt7C8QIL1UCtvAaS" Name="id" Kind="InputPin" />
                 <Pin Id="UR1KcwbSWgULvpImpCOkFF" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="1108,239,66,26" Id="GckouVUhh0OL5WU9IENXpM">
+              <Node Bounds="1109,231,66,26" Id="GckouVUhh0OL5WU9IENXpM">
                 <p:NodeReference LastCategoryFullName="System.Serialization" LastSymbolSource="System.Serialization.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Deserialize" />
@@ -6759,6 +6760,43 @@
                   </p:TypeAnnotation>
                 </Pin>
                 <Pin Id="MIau7LuGUULOkLGAQsPdHr" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="688,257,65,26" Id="KY9ovCRqGMBOpWrUX96kbo">
+                <p:NodeReference LastCategoryFullName="System.Serialization" LastSymbolSource="System.Serialization.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Serialize" />
+                  <CategoryReference Kind="Category" Name="Serialization" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="Category" Name="System" NeedsToBeDirectParent="true" />
+                  </CategoryReference>
+                  <PinReference Kind="InputPin" Name="Name" />
+                </p:NodeReference>
+                <Pin Id="Sg8O6bRFIAhMxvF7sCNnoN" Name="Input" Kind="InputPin" />
+                <Pin Id="RCwxFxnajObLHAXpRWA9UN" Name="Name" Kind="InputPin" DefaultValue="Type">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="KvAkQMdND27NHPg82MIkTs" Name="Value" Kind="InputPin" />
+                <Pin Id="OJexbDCm7fPLFotquN58Rn" Name="Force Element" Kind="InputPin" />
+                <Pin Id="HACSJ1mMGbNNLgbynP2EZD" Name="Result" Kind="OutputPin" />
+              </Node>
+              <Node Bounds="1189,230,66,26" Id="Br1xr9HvzL6OxiWJYjvA6T">
+                <p:NodeReference LastCategoryFullName="System.Serialization" LastSymbolSource="System.Serialization.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="Deserialize" />
+                  <CategoryReference Kind="Category" Name="Serialization" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="Category" Name="System" NeedsToBeDirectParent="true" />
+                  </CategoryReference>
+                  <PinReference Kind="InputPin" Name="Name" />
+                </p:NodeReference>
+                <Pin Id="QNFoBgM4grfLz6BVvN9v3h" Name="Input" Kind="InputPin" />
+                <Pin Id="FGbB4qZxWGvPcKfRaadeuj" Name="Content" Kind="InputPin" />
+                <Pin Id="JnL22LnjFf0NPCKUrzyxxJ" Name="Name" Kind="InputPin" DefaultValue="Type">
+                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="Fm3pxZp2vIYNzlDdwdGN0Q" Name="Result" Kind="OutputPin" />
               </Node>
             </Canvas>
             <Patch Id="N8jjg8vZ4Z3O8eqBFqeDcD" Name="Create" />
@@ -6814,6 +6852,12 @@
             <Link Id="Ank2rmvQJftLgLDMnumNzN" Ids="E4kFps6kAGRMnuOskGHQnk,B3HzWy9cvYNNzYOzt9xYrO" />
             <Link Id="MvKrI5AugLuPKw2eHt1Org" Ids="MIau7LuGUULOkLGAQsPdHr,UP5CCfJk27ONfFVCKKti3b" />
             <Link Id="FsQoTxyiPBWNljefrPTdRb" Ids="Vfwr5xFFntBLmOdXx5SLC3,Fp4NIR4XGpVLbqBbNPg9IT" />
+            <Link Id="QV8itGkxrekOMARRNXCnSt" Ids="FfsF4DkeFX0MGXmmDuAHPk,KvAkQMdND27NHPg82MIkTs" />
+            <Link Id="B2KxJ8fPZdfMQjpLVuZYNo" Ids="HLIqC3DqEj5MW9wZjxDb33,Sg8O6bRFIAhMxvF7sCNnoN" />
+            <Link Id="SXVwgOxZZmvLijzKKaigiF" Ids="HACSJ1mMGbNNLgbynP2EZD,NyS6M34rdGSNltXv9grhRG" />
+            <Link Id="PUsjwPE8nbiLGjbFjOvdxC" Ids="E4kFps6kAGRMnuOskGHQnk,QNFoBgM4grfLz6BVvN9v3h" />
+            <Link Id="FVJVVxUC1PFNGN9ctBau8B" Ids="Vfwr5xFFntBLmOdXx5SLC3,FGbB4qZxWGvPcKfRaadeuj" />
+            <Link Id="D241LpbNimjPEhx2pkrudT" Ids="Fm3pxZp2vIYNzlDdwdGN0Q,AtXH2S8PbswLfX1F3QMary" />
           </Patch>
         </Node>
         <!--
@@ -6821,7 +6865,7 @@
     ************************ RegisterServices ************************
 
 -->
-        <Node Name="RegisterServices" Bounds="735,432,198,120" Id="I7BzuxRp80cO7m6sRlGFxK">
+        <Node Name="RegisterServices" Bounds="735,432,199,120" Id="I7BzuxRp80cO7m6sRlGFxK">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
             <Choice Kind="OperationDefinition" Name="Operation" />
           </p:NodeReference>
@@ -6839,7 +6883,7 @@
               <Pin Id="JTRAoCu6yHAQIMXYCfUkYN" Name="Output" Kind="OutputPin" />
             </Node>
             <Link Id="Bx0K5AKHUytONPbul9Fypr" Ids="F7pV9zJ6dXiOH2KhU4QMNJ,NFBjGWVGTfcNPoWxDZAAUy" />
-            <Node Bounds="836,458,85,26" Id="GyU1Z2IGZ0CNJ0SsFWQZ6j">
+            <Node Bounds="837,455,85,26" Id="GyU1Z2IGZ0CNJ0SsFWQZ6j">
               <p:NodeReference>
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="DTileSerializer" />
